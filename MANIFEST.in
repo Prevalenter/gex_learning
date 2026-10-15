@@ -1,4 +1,4 @@
-include README.md LICENSE .gitignore
+include README.md README.zh-CN.md LICENSE .gitignore
 recursive-include scripts *.py
 recursive-include experiment *.ps1
 recursive-include docs *.md *.json

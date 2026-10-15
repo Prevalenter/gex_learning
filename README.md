@@ -1,53 +1,51 @@
 # gex_learning
 
-GX4M 灵巧手的 Isaac Lab 仿真训练与评估代码。包含以下四个任务：
+**English** | [简体中文](README.zh-CN.md)
 
-| 功能 | 模块 | Gym 任务 ID |
+Isaac Lab simulation training and evaluation for the GX4M dexterous hand. This repository includes four tasks:
+
+| Task | Module | Gym task ID |
 | --- | --- | --- |
-| AnyGrasp，Franka + GX4M 抓取方块 | `dexanygrasp` | `Gx4m-DexAnyGrasp-Direct-v0` |
-| Twist，灯泡旋拧 | `dexanytwist` | `Gx4m-DexAnyTwist-Direct-v0` |
-| Cubic，DexCube 掌内重定向 | `inhand_reorient` | `Gx4m-InHandReorient-Direct-v0` |
-| Super In-Air，60 mm 网球旋转 | `super_inair` | `Gx4m-SuperInAir-Rotation-Direct-v0` |
+| AnyGrasp: cube grasping with Franka + GX4M | `dexanygrasp` | `Gx4m-DexAnyGrasp-Direct-v0` |
+| Twist: light bulb twisting | `dexanytwist` | `Gx4m-DexAnyTwist-Direct-v0` |
+| Cubic: in-hand DexCube reorientation | `inhand_reorient` | `Gx4m-InHandReorient-Direct-v0` |
+| Super In-Air: 60 mm tennis ball rotation | `super_inair` | `Gx4m-SuperInAir-Rotation-Direct-v0` |
 
-Super In-Air 只支持网球；首次使用需准备网球资产和有效抓握缓存，详见
-[网球训练与迁移说明](docs/SUPER_INAIR.md)。本机已准备完毕，运行
-`.\experiment\super_inair\train.ps1` 即从头训练一小时。
+Super In-Air supports only the tennis ball. Prepare its assets and a valid grasp cache before training; see the [tennis task guide (Chinese)](docs/SUPER_INAIR.md). Once prepared, `.\experiment\super_inair\train.ps1` starts a fresh one-hour run.
 
-Twist 仅支持 `bulb_custom_0017`，保留定制初始姿态、关节目标、点特征和原类别编号 93。
-原有任务 ID、机器人名称和 PPO/奖励参数保持不变。这里的 AnyGrasp 指本仓库的强化学习任务。
-不包含真机部署、预训练权重、velocity/student 扩展及其他实验。
+Twist supports only `bulb_custom_0017`, preserving its custom initial pose, joint targets, point features, and original class index **93**. Task IDs and robot names retain their original spelling. Here, AnyGrasp refers to this repository's reinforcement learning task. Real robot deployment, pretrained weights, velocity/student extensions, and other experiments are excluded.
 
-## 安装
+## Installation
 
-以已有 Isaac Lab 环境为基础。本次验证环境：Windows、Python 3.11、Isaac Lab 2.3.2、
-Isaac Sim 5.1.0、PyTorch 2.7.0+cu128、RSL-RL 5.0.1、NumPy 1.26.0。
-这些版本描述本次本地环境，不保证其他版本已通过仿真验证。
+Use an existing Isaac Lab environment. Local validation used Windows, Python 3.11, Isaac Lab 2.3.2, Isaac Sim 5.1.0, PyTorch 2.7.0+cu128, RSL-RL 5.0.1, and NumPy 1.26.0. Other versions have not been validated here.
 
-先激活安装了 Isaac Lab、Isaac Sim 和 RSL-RL 的 Python 环境，然后在仓库根目录执行：
+Activate your Python environment with Isaac Lab, Isaac Sim, and RSL-RL installed, then run from the repository root:
 
 ```powershell
-$env:ISAACLAB_ROOT = "D:\tools\IsaacLab"  # 改成自己的 Isaac Lab 源码目录；editable 安装可自动定位，省略此行
+$env:ISAACLAB_ROOT = "D:\tools\IsaacLab"  # Your Isaac Lab checkout; omit if its editable installation is discoverable
 python -m pip install -e ".[viser,test]"
 python scripts/prepare_assets.py --check
 ```
 
-AnyGrasp、Twist 和 Cubic 所需资产已随源码提供；网球资产及抓握缓存按上方准备说明恢复。
-AnyGrasp 的方块由环境代码生成；Cubic 使用随附的 DexCube 网格与纹理。
-完整对应关系见 [任务资产](asset/README.md)。如需从原资产包恢复文件，可运行
-`python scripts/prepare_assets.py --source <资产目录>`。
-本项目支持在源码目录中 editable 安装；运行脚本和资产需保留在同一份 checkout 中。
+Assets for AnyGrasp, Twist, and Cubic are included in the source checkout. Prepare the tennis assets and grasp cache separately using the guide above. AnyGrasp generates its cube in code; Cubic uses the included DexCube mesh and texture. See the [asset inventory (Chinese)](asset/README.md). To restore files from an asset bundle:
 
-PowerShell 启动器默认调用当前环境的 `python`。需要指定解释器时：
+```powershell
+python scripts/prepare_assets.py --source <asset-directory>
+```
+
+The supported installation is an editable source checkout. Keep scripts and assets together in that checkout.
+
+PowerShell launchers use `python` from the current environment. To select an interpreter explicitly:
 
 ```powershell
 $env:PYTHON_EXECUTABLE = "D:\envs\isaaclab\python.exe"
 ```
 
-Linux 可使用下面的 Python 入口并设置 `export ISAACLAB_ROOT=/path/to/IsaacLab`；本次未进行 Linux 仿真验证。
+On Linux, use the Python entry points below and set `export ISAACLAB_ROOT=/path/to/IsaacLab`. Linux simulation has not been validated here.
 
-## 训练
+## Training
 
-下面的入口默认无窗口训练，`--num_envs` 根据显存调整：
+These entry points run headless by default. Adjust `--num_envs` to fit your GPU memory:
 
 ```powershell
 python scripts/train_dexanygrasp.py --num_envs 4096 --max_iterations 10000
@@ -56,16 +54,13 @@ python scripts/train_inhand_reorient.py --num_envs 8192 --max_iterations 10000
 python scripts/train_super_inair.py --num_envs 8192 --max_iterations 100000 --max-training-hours 1
 ```
 
-首次检查可用 `--num_envs 4 --max_iterations 1`，Twist 另加 `env.scale_variant_count=2`；
-本机默认 30 个尺寸变体曾在转换阶段超时，详见验证记录。
-`--debug true` 打开窗口并使用入口预设的小批量环境。
-同样可运行 `experiment/<模块>/train.ps1`；这些便捷启动器保留原训练规模，应按机器显存覆盖参数。
+For a first smoke check, use `--num_envs 4 --max_iterations 1`. For Twist, also add `env.scale_variant_count=2`: the default 30 size variants previously timed out during conversion on the local machine.
 
-默认日志分别写入 `logs/rsl_rl/gx4m_dexanygrasp_ducky`、`gx4m_dexanytwist`、
-`gx4m_inhand_reorient`、`gx4m_super_inair_tennis`。AnyGrasp 日志名中的 `ducky` 是历史命名，当前物体是方块。
-这些日志、生成权重和采样数据被 `.gitignore` 排除。
+Use `--debug true` to open the viewer with the entry point's small environment count. Alternatively, run `experiment/<module>/train.ps1`; override its environment count as needed for your GPU.
 
-AnyGrasp、Twist 和 Cubic 可按实际训练时间停止并保存检查点，例如：
+Default log directories under `logs/rsl_rl/` are `gx4m_dexanygrasp_ducky`, `gx4m_dexanytwist`, `gx4m_inhand_reorient`, and `gx4m_super_inair_tennis`. The `ducky` suffix is historical: AnyGrasp currently uses a cube. Logs, generated checkpoints, and sampled trajectories are excluded by `.gitignore`.
+
+Training can stop and save after a specified wall time:
 
 ```powershell
 python scripts/train_dexanygrasp.py --num_envs 4096 --max_iterations 1000000 --max-training-hours 0.5
@@ -73,12 +68,11 @@ python scripts/train_dexanytwist.py --num_envs 4096 --max_iterations 1000000 --m
 python scripts/train_inhand_reorient.py --num_envs 8192 --max_iterations 1000000 --max-training-hours 1
 ```
 
-计时从学习循环开始，不包含仿真初始化；达到时限后完成当前 iteration、保存模型并正常退出。
-运行状态和预计截止时间写入训练目录的 `training_time_limit.json`。
+Timing starts at the learning loop, excluding simulation initialization. At the deadline, training finishes the current iteration, saves the model, and exits. The run directory's `training_time_limit.json` records status and the expected deadline.
 
-## 回放与评估
+## Playback and evaluation
 
-将 `<checkpoint>` 替换为上述训练产生的 `model_*.pt`：
+Replace `<checkpoint>` with a `model_*.pt` produced by training:
 
 ```powershell
 python scripts/play_dexanygrasp.py --checkpoint <checkpoint> --num_envs 1
@@ -87,48 +81,48 @@ python scripts/play_inhand_reorient.py --checkpoint <checkpoint> --num_envs 1
 python scripts/play_super_inair.py --checkpoint <checkpoint> --num_envs 1
 ```
 
-`play_*.py` 使用 Isaac Lab 官方回放器，要求显式提供检查点。`test_*.py` 是带时长限制的回放入口，
-不是 pytest 测试；可指定 `--duration 10 --headless --no-real-time`。
-`test_*.py` 未提供检查点时从当前仓库对应日志目录选择最新模型。
-本次已验证无窗口回放；本机视口渲染配置出现原生崩溃，可视化交互尚未验收。
+The `play_*.py` scripts use Isaac Lab's playback runner and require an explicit checkpoint. The `test_*.py` scripts provide time-limited playback, not pytest tests. They accept `--duration 10 --headless --no-real-time` and select the latest checkpoint in the corresponding local log directory when none is specified.
 
 ```powershell
 python scripts/test_dexanytwist.py --checkpoint <checkpoint> --num_envs 1 --duration 10 --headless --no-real-time
 ```
 
-Cubic / InHandReorient 默认使用 `env.goal_rotation_axes=xyz` 和 `env.goal_mode=random`，
-在 X、Y、Z 三轴上组合采样 90° 的整数倍旋转作为目标姿态。默认
-`env.policy_joint_action_only=False`：策略使用 47 维观测，包含关节位置、上一帧动作、
-物体位置与姿态、目标姿态及姿态误差。随机目标不允许搭配看不到目标的 32 维观测。
-训练入口默认 8192 个环境，与原目录成功的 Z 轴实验一致，可用 `--num_envs` 覆盖。
-此前生成的 32 维模型不能直接续训或回放为新的 47 维策略，需要从头训练。
-若要按旧 Z 轴配置回放，显式传入
-`env.goal_rotation_axes=z env.goal_mode=continuous_ccw env.policy_joint_action_only=True`。
-配置对比和验证边界见 [Cubic 训练修正记录](docs/CUBIC_TRAINING_FIX.md)。
+Headless playback has been checked. Cubic GUI playback was subsequently verified after fixing its Windows graphics backend; GUI playback has not been validated for every task. See the [validation record (Chinese)](docs/VALIDATION.md) for historical renderer issues and validation scope.
 
-配置工具：
+### Cubic / InHandReorient
+
+Defaults are `env.goal_rotation_axes=xyz` and `env.goal_mode=random`. Goal orientations combine multiples of 90 degrees about X, Y, and Z. With `env.policy_joint_action_only=False`, the actor receives 47 observations: joint positions, previous actions, object position and orientation, goal orientation, and orientation error. Random goals require this goal-aware observation layout.
+
+The training entry point defaults to 8192 environments, adjustable with `--num_envs`. Cube scale is randomized over `0.82–0.88`, giving a side length of **49.2–52.8 mm**. Existing 32-observation models cannot be resumed or played as 47-observation policies; train a new policy instead. To replay an older Z-axis model, explicitly pass:
+
+```text
+env.goal_rotation_axes=z env.goal_mode=continuous_ccw env.policy_joint_action_only=True
+```
+
+See the [Cubic configuration notes (Chinese)](docs/CUBIC_TRAINING_FIX.md) for the comparison and validation limits.
+
+### Configuration tools
 
 ```powershell
 python scripts/configure_dexanytwist_viser.py
 python scripts/configure_inhand_reorient_viser.py
 ```
 
-配置工具会修改对应 JSON。Cubic / InHandReorient 的专用配置器默认位于
-`http://127.0.0.1:8083`，支持 16 个初始关节位置、方块平移与旋转，
-也可通过 `experiment/inhand_reorient/configure_viser.ps1` 启动。
-点击“保存初始姿态”后，新启动的训练和回放自动使用保存姿态重置。
-详细行为见 [Cubic 初始姿态配置](docs/INHAND_INITIAL_POSE.md)。
-`experiment/<模块>/sample.ps1` 采集轨迹；`tensorboard.ps1` 查看该任务的训练曲线。
+These tools edit task JSON files. The Cubic editor defaults to `http://127.0.0.1:8083` and supports 16 initial joint positions plus cube translation and rotation. You can also launch it through `experiment/inhand_reorient/configure_viser.ps1`.
 
-## 目录与验证
+Click **保存初始姿态** (Save initial pose) to use the saved pose in new training runs. Cubic playback restores settings from the checkpoint's training configuration when available; pass `env.use_initial_pose_config=True` to use the latest editor configuration explicitly. See the [initial pose guide (Chinese)](docs/INHAND_INITIAL_POSE.md).
+
+Use `experiment/<module>/sample.ps1` to collect trajectories and `tensorboard.ps1` to inspect training curves.
+
+## Repository layout and validation
 
 ```text
-source/gex_learning/gex_learning/   四个环境、任务注册及公共模块
-scripts/                           训练、回放、评估、配置和资产检查
-experiment/                        四个任务的 PowerShell 启动器
-asset/                             资产清单、准备说明及本地模型
-tests/                             不启动仿真的单元测试
-docs/                              来源、迁移清单及验证结果
+source/gex_learning/gex_learning/   Four tasks, registrations, and shared modules
+scripts/                           Training, playback, evaluation, configuration, and asset checks
+experiment/                        PowerShell launchers for the four tasks
+asset/                             Asset manifest, preparation instructions, and local models
+tests/                             Unit tests that do not start simulation
+docs/                              Sources, migration inventory, and validation results
 ```
 
 ```powershell
@@ -137,5 +131,4 @@ python scripts/prepare_assets.py --check
 python scripts/check_usd_assets.py
 ```
 
-详细结果见 [验证记录](docs/VALIDATION.md)，保留和排除范围见 [迁移说明](docs/MIGRATION.md)。
-项目自身代码采用 [MIT](LICENSE)；第三方资产与外部依赖见 [来源与许可说明](docs/THIRD_PARTY_NOTICES.md)。
+See the [validation record](docs/VALIDATION.md) and [migration scope](docs/MIGRATION.md) (Chinese). Project-owned code uses the [MIT license](LICENSE). Third-party assets and dependencies retain their own terms; see [sources and licenses (Chinese)](docs/THIRD_PARTY_NOTICES.md).
