@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "status": "complete",
+  "objects": [
+    {
+      "id": "tennis_ball_60",
+      "cache": "../../outputs/super_inair/tennis_grasps",
+      "count": 1000
+    }
+  ]
+}

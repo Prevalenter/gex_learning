@@ -1,0 +1,759 @@
+[
+  {
+    "source": "source/gx4m_learning/gx4m_learning/__init__.py",
+    "destination": "source/gex_learning/gex_learning/__init__.py",
+    "source_sha256": "0382da73f7e89ad0216d76a83863aaef97d456bc6d509d2b746f085cb5925dec"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/__init__.py",
+    "source_sha256": "2be314141f8d60b5a562c6e038b38064e95d7d0d969b36fc74ce90d79c7d6149"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/hand_trajectory_recorder.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/hand_trajectory_recorder.py",
+    "source_sha256": "1adda4579d9a3dd3a7cebce88cc59af0ab2666c44937dd689c0c59de4cf210f8"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanygrasp/dexanygrasp_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanygrasp/dexanygrasp_env.py",
+    "source_sha256": "afb39f80d5f5eaf62d5dcdaa93b27e7bbf0bcf68486afcde90f537e20c56a78f"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanygrasp/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanygrasp/__init__.py",
+    "source_sha256": "5fd2bbc5c7613d1198478c746b8c5b01d6bf5217bc58323d6a5a3e3055d9cd50"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanygrasp/agents/rsl_rl_ppo_cfg.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanygrasp/agents/rsl_rl_ppo_cfg.py",
+    "source_sha256": "0f0526a01301429b6ef227ed819d2ffa76cc92de1826b20cff000490fd1df428"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanygrasp/agents/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanygrasp/agents/__init__.py",
+    "source_sha256": "1b83dc8687e59074c2817f77eed65947efa501c2772d41166be344dc11c1f16c"
+  },
+  {
+    "source": "scripts/train_dexanygrasp.py",
+    "destination": "scripts/train_dexanygrasp.py",
+    "source_sha256": "0bb2fa503925aa8ab15fc3967a5920a5a3c722b7b5a29f430e68fa101c8ab8c2"
+  },
+  {
+    "source": "scripts/play_dexanygrasp.py",
+    "destination": "scripts/play_dexanygrasp.py",
+    "source_sha256": "1d20782266d3b748878b43998db95a6c664e56a53f0b6a9e34db08de49022b70"
+  },
+  {
+    "source": "scripts/test_dexanygrasp.py",
+    "destination": "scripts/test_dexanygrasp.py",
+    "source_sha256": "a262123ec964f4bf925ebc7e163a7653d6b3b33e60464d90f2ef038a86223aba"
+  },
+  {
+    "source": "experiment/dexanygrasp/play.ps1",
+    "destination": "experiment/dexanygrasp/play.ps1",
+    "source_sha256": "aa32dd0964df761a7e684f58388ba083cffbb7dc80d1a47836e175244c714145"
+  },
+  {
+    "source": "experiment/dexanygrasp/sample.ps1",
+    "destination": "experiment/dexanygrasp/sample.ps1",
+    "source_sha256": "81dbe3f9127bbbcb1861f142fd4822b82886de276526d52584cbfb4b1a3759ce"
+  },
+  {
+    "source": "experiment/dexanygrasp/tensorboard.ps1",
+    "destination": "experiment/dexanygrasp/tensorboard.ps1",
+    "source_sha256": "8e5fadd030e8d28c874a3ccf86e8570d62e50c44d05a63d4978994d718b603db"
+  },
+  {
+    "source": "experiment/dexanygrasp/train.ps1",
+    "destination": "experiment/dexanygrasp/train.ps1",
+    "source_sha256": "5d43ef7b5f516c86ffd97bf3ba4c2ee7106d6953be046577458c0731ecbc407a"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/dataset.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/dataset.py",
+    "source_sha256": "593ce92e873a90a6e6620cb3ecd99096d348fdb585c0edceed724974cbe6792c"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/dexanytwist_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/dexanytwist_env.py",
+    "source_sha256": "58b00799edd12cb13b007f40ba0b14fd8c812108c0ebf70c888628901f68827d"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/__init__.py",
+    "source_sha256": "448bd46fd9b2209376b56a70c1e2f4cb0b3a0358f4799b879f425189810cd763"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/agents/rsl_rl_ppo_cfg.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/agents/rsl_rl_ppo_cfg.py",
+    "source_sha256": "cb3849b51c5221559d7fafd06e2044084f6ad345f3ae4c5fbf0496e46f98d5a5"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/agents/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/agents/__init__.py",
+    "source_sha256": "1013b0846461e668bf1ffd5ede93e1c2d204b6d41b6f8ffb41e111beb73cc140"
+  },
+  {
+    "source": "scripts/train_dexanytwist.py",
+    "destination": "scripts/train_dexanytwist.py",
+    "source_sha256": "03ce05c44b70dbf1b45f00100b56a0f3b7c1dcc2f71549b3d965564f50094fc7"
+  },
+  {
+    "source": "scripts/play_dexanytwist.py",
+    "destination": "scripts/play_dexanytwist.py",
+    "source_sha256": "a419b1f3e1a2e39410057a80aaa61fbf6135dc10acc71a8559c7175511256a4e"
+  },
+  {
+    "source": "scripts/test_dexanytwist.py",
+    "destination": "scripts/test_dexanytwist.py",
+    "source_sha256": "0ddfe9432b30aaa369598c861c7247638b0011fc76fce91ac4011eec66cc2461"
+  },
+  {
+    "source": "experiment/dexanytwist/configure_viser.ps1",
+    "destination": "experiment/dexanytwist/configure_viser.ps1",
+    "source_sha256": "3d18e5556f4bc4d3d2f33e9736d48bee72d48ac4aaf13b92d865bee479e040e3"
+  },
+  {
+    "source": "experiment/dexanytwist/play.ps1",
+    "destination": "experiment/dexanytwist/play.ps1",
+    "source_sha256": "a7d8b47acd5e532257043cdb4953705adedccc8c4be8b948d28ddc6877b6ea13"
+  },
+  {
+    "source": "experiment/dexanytwist/sample.ps1",
+    "destination": "experiment/dexanytwist/sample.ps1",
+    "source_sha256": "a302eb2b56be732803e861c929e58a90fc3528b0f8600d156ac10909b00fa778"
+  },
+  {
+    "source": "experiment/dexanytwist/tensorboard.ps1",
+    "destination": "experiment/dexanytwist/tensorboard.ps1",
+    "source_sha256": "7eb0cf870685d1cbb15ae721a7f4ca262a0c244e97d97b02d3ee038b11acdd88"
+  },
+  {
+    "source": "experiment/dexanytwist/train.ps1",
+    "destination": "experiment/dexanytwist/train.ps1",
+    "source_sha256": "c9ec3bfd971ee60c3c54cce18e01958f507865cdc1d443e0f9a670562c9298d7"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/inhand_reorient/inhand_reorient_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/inhand_reorient/inhand_reorient_env.py",
+    "source_sha256": "bb2f863aaa61d1ea2974075088d75535f233a041f2a8d0d47221016a7236d522"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/inhand_reorient/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/inhand_reorient/__init__.py",
+    "source_sha256": "b720ebc4dcaed3e21841717a102b4df557b2b5523cd970a717ae1f8acbd6eefd"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/inhand_reorient/agents/rsl_rl_ppo_cfg.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/inhand_reorient/agents/rsl_rl_ppo_cfg.py",
+    "source_sha256": "3fe17059c76be877fd7480cd440e939443e74e43a7967b13658c972411b95fcc"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/inhand_reorient/agents/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/inhand_reorient/agents/__init__.py",
+    "source_sha256": "cc6a64a18f1d476aacd8188e85a49885a3b47f0ebfb3739b8a14a4139298ccbc"
+  },
+  {
+    "source": "scripts/train_inhand_reorient.py",
+    "destination": "scripts/train_inhand_reorient.py",
+    "source_sha256": "b454c5e6f68b3ea32cf1511dbca8f8c63d3668f584d7b249ea65b52a3e216dfb"
+  },
+  {
+    "source": "scripts/play_inhand_reorient.py",
+    "destination": "scripts/play_inhand_reorient.py",
+    "source_sha256": "934b5fd82986a5a9d5bb10c664ed4b612757df2161e52f58bc08ab42be41ed58"
+  },
+  {
+    "source": "scripts/test_inhand_reorient.py",
+    "destination": "scripts/test_inhand_reorient.py",
+    "source_sha256": "b3b1eb919cea4017ccb72104b682fc5dfd58ad1443bd898a31868142960622f4"
+  },
+  {
+    "source": "experiment/inhand_reorient/play.ps1",
+    "destination": "experiment/inhand_reorient/play.ps1",
+    "source_sha256": "60b8abbbf9737e69cb21bce6244b202a208cde0873ffde9a3750198bed4f0b99"
+  },
+  {
+    "source": "experiment/inhand_reorient/sample.ps1",
+    "destination": "experiment/inhand_reorient/sample.ps1",
+    "source_sha256": "e5e7e59627ac7a093e4a04f6716de104f4e233b085bf6a297392213732bef7eb"
+  },
+  {
+    "source": "experiment/inhand_reorient/tensorboard.ps1",
+    "destination": "experiment/inhand_reorient/tensorboard.ps1",
+    "source_sha256": "61a16837a47239dcedf5c600f679ed8b7190d2fd38eec080c0c11f3d2eebbfb4"
+  },
+  {
+    "source": "experiment/inhand_reorient/train.ps1",
+    "destination": "experiment/inhand_reorient/train.ps1",
+    "source_sha256": "b6f9cdba28fc0130323542faecd0bba8608cf93e1e7cb07979c403c0ad8649d6"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inhand/super_inhand_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/hand_env.py",
+    "source_sha256": "8f5d24ffc698b5e28927c92998517954ccdd07cf1d6bd66c3c310f2aaef2ed70",
+    "note": "Dependency extracted on 2026-10-15 when removing the standalone Super In-Hand task."
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inhand/agents/rsl_rl_ppo_cfg.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/agents/rsl_rl_ppo_cfg.py",
+    "source_sha256": "4059ff4ecb33c0492328f13d4fe20db93227ca4aac79fb50b0b185c935d691cb",
+    "note": "Dependency extracted on 2026-10-15 when removing the standalone Super In-Hand task."
+  },
+  {
+    "source": "scripts/test_super_inhand.py",
+    "destination": "scripts/test_super_inair.py",
+    "source_sha256": "24825e0a5f45c31ac938bd0ae9198d005eb8d0d82ebaab428236f37a036335c1",
+    "note": "Dependency extracted on 2026-10-15 when removing the standalone Super In-Hand task."
+  },
+  {
+    "source": "scripts/__init__.py",
+    "destination": "scripts/__init__.py",
+    "source_sha256": "cf0690f78b4cee8b0433c0811a48e31266c212ad73dcbc9f1c87528acfd0a342"
+  },
+  {
+    "source": "scripts/configure_dexanytwist_viser.py",
+    "destination": "scripts/configure_dexanytwist_viser.py",
+    "source_sha256": "81b6e162966cb7d8b654a40d9d0adc8c1a9beaff33a767065dc995e1d46f607c"
+  },
+  {
+    "source": "scripts/configure_super_inhand_viser.py",
+    "destination": "scripts/pose_math.py",
+    "source_sha256": "ba76679b8b2c896e9330cede2941b8d48c7f7864a6b1ee49664571ff96900e06",
+    "note": "Dependency extracted on 2026-10-15 when removing the standalone Super In-Hand task."
+  },
+  {
+    "source": "scripts/tensorboard_with_pins.py",
+    "destination": "scripts/tensorboard_with_pins.py",
+    "source_sha256": "bb393132384e0e13539536888ead08312afa3cb173a5a5935b7c75bca0a0e4f4"
+  },
+  {
+    "source": "tests/test_hand_trajectory_recorder.py",
+    "destination": "tests/test_hand_trajectory_recorder.py",
+    "source_sha256": "a3ecdac7758e7b67f5963d68249c98fbcfd1dca10896d93b61e887189e74e7ff"
+  },
+  {
+    "source": "pyproject.toml",
+    "destination": "pyproject.toml",
+    "source_sha256": "0aea533f2a28ee8a94e4fbece322a71db7e6a6eb1515e3fa11c5f26e3a3cbb26"
+  },
+  {
+    "source": "asset/gx4m/urdf/gx4m.urdf",
+    "destination": "asset/gx4m/urdf/gx4m.urdf",
+    "source_sha256": "f4c6e1dc873ad4eb970db875dd93b38191aedda92f6cac0e30a5d0fdc9f31a78"
+  },
+  {
+    "source": "asset/gx4m/meshes/base_link.STL",
+    "destination": "asset/gx4m/meshes/base_link.STL",
+    "source_sha256": "c938de77270f49adf1e63af4d5fee3956ef625d80324264ad924c895ca75e449"
+  },
+  {
+    "source": "asset/gx4m/meshes/link1.STL",
+    "destination": "asset/gx4m/meshes/link1.STL",
+    "source_sha256": "f5e912352f31c8027256b316f3401b35d387900f46a3c357996566d243da76ac"
+  },
+  {
+    "source": "asset/gx4m/meshes/link10.STL",
+    "destination": "asset/gx4m/meshes/link10.STL",
+    "source_sha256": "07fbff4283e83ca276d095256f2ef4dd1f059d854f021c87c65c6f1273108bb5"
+  },
+  {
+    "source": "asset/gx4m/meshes/link11.STL",
+    "destination": "asset/gx4m/meshes/link11.STL",
+    "source_sha256": "23a0a1f071c44a4c2af58404f7652dc354950c3ec73d7e8851b41a8c6bd5b81a"
+  },
+  {
+    "source": "asset/gx4m/meshes/link12.STL",
+    "destination": "asset/gx4m/meshes/link12.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/gx4m/meshes/link13.STL",
+    "destination": "asset/gx4m/meshes/link13.STL",
+    "source_sha256": "bdf88ecd56d8a0f98c69e8a5e4e89fe5ad581c4717afa3537d38b9a098aad281"
+  },
+  {
+    "source": "asset/gx4m/meshes/link14.STL",
+    "destination": "asset/gx4m/meshes/link14.STL",
+    "source_sha256": "e8ae2e68b174b4fa5c7d95671473d38d4120d5358c7278111bdb359acb888366"
+  },
+  {
+    "source": "asset/gx4m/meshes/link15.STL",
+    "destination": "asset/gx4m/meshes/link15.STL",
+    "source_sha256": "f09b652c52831e26e73e6f717dc9d7a8ea6f994dbab3eaf25d63699c5ad48a9f"
+  },
+  {
+    "source": "asset/gx4m/meshes/link16.STL",
+    "destination": "asset/gx4m/meshes/link16.STL",
+    "source_sha256": "8c43ca40726de945110268de8fa55efff7ba3a85cc3bd743ef12d2e8b62ccc95"
+  },
+  {
+    "source": "asset/gx4m/meshes/link17.STL",
+    "destination": "asset/gx4m/meshes/link17.STL",
+    "source_sha256": "894f1001a000039d4d843b8dcae038febfe2f6972514cfcd8c1725ac224ae21c"
+  },
+  {
+    "source": "asset/gx4m/meshes/link2.STL",
+    "destination": "asset/gx4m/meshes/link2.STL",
+    "source_sha256": "daa40e681f79e46612bdbda4ac120a9575f38070002b151fc979e1c0f0d30e78"
+  },
+  {
+    "source": "asset/gx4m/meshes/link3.STL",
+    "destination": "asset/gx4m/meshes/link3.STL",
+    "source_sha256": "271cb144a07de276bf8038a248c71969c50c889420af10dd128131c53f94a3c9"
+  },
+  {
+    "source": "asset/gx4m/meshes/link4.STL",
+    "destination": "asset/gx4m/meshes/link4.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/gx4m/meshes/link5.STL",
+    "destination": "asset/gx4m/meshes/link5.STL",
+    "source_sha256": "17c35853e7d6eac9f4f756b50cc4df8b3ff36fc83dafe56de961bcf3b79ada08"
+  },
+  {
+    "source": "asset/gx4m/meshes/link6.STL",
+    "destination": "asset/gx4m/meshes/link6.STL",
+    "source_sha256": "13eda232f633d94f65ff6cd1bce133f2ed9e7b6b4c8ec6cbce428519ebcd0088"
+  },
+  {
+    "source": "asset/gx4m/meshes/link7.STL",
+    "destination": "asset/gx4m/meshes/link7.STL",
+    "source_sha256": "f0961df105e6a8f0fb5aaa4d2a455bc076b4648e78fdf0fcfbbed1e4c9f23d45"
+  },
+  {
+    "source": "asset/gx4m/meshes/link8.STL",
+    "destination": "asset/gx4m/meshes/link8.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/gx4m/meshes/link9.STL",
+    "destination": "asset/gx4m/meshes/link9.STL",
+    "source_sha256": "aef73caf57e4505c31872a171abb0014c5a5acd20684eaf729d9d397513ff61e"
+  },
+  {
+    "source": "asset/franka_gx4m/urdf/franka_gx4m.urdf",
+    "destination": "asset/franka_gx4m/urdf/franka_gx4m.urdf",
+    "source_sha256": "4a97a52a59fe8d4f514b14942f21ccb12bb6752d4a50fb6b2c3941ca66b663b3"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/finger.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/finger.stl",
+    "source_sha256": "eade0765d87446c8833d88511a4c46573baba2e8eacc15b975aecd123d740296"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/hand.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/hand.stl",
+    "source_sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link0.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link0.stl",
+    "source_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link1.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link1.stl",
+    "source_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link2.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link2.stl",
+    "source_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link3.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link3.stl",
+    "source_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link4.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link4.stl",
+    "source_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link5.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link5.stl",
+    "source_sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link6.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link6.stl",
+    "source_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/collision/link7.stl",
+    "destination": "asset/franka_gx4m/meshes/franka/collision/link7.stl",
+    "source_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/finger.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/finger.dae",
+    "source_sha256": "a9d5471e9cdf76f85493df6fe6c76d29810edd21577c204009160496d5b77fbb"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/hand.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/hand.dae",
+    "source_sha256": "9602bbad114cfefd4bbb0cd0a57f3021bce9efbaaa1604a5e72bfb76926bb019"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link0.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link0.dae",
+    "source_sha256": "d9ceaa66bb3a734e3a32f2f737ae57a29e922f4a962ed77b9bb8d8e25cd33159"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link1.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link1.dae",
+    "source_sha256": "9c8b7b7c1217d620a811fc0ee52d1d1b0e1470de955e7453872aac3f15cf7c5e"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link2.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link2.dae",
+    "source_sha256": "c44d0364f0030007e427106a4e842d835ca43902716cc46ee4f3342dab189e12"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link3.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link3.dae",
+    "source_sha256": "dab39a126153fb82f3650cca6de63a8e978f851aa5020a8e91b3d9d548dbba3d"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link4.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link4.dae",
+    "source_sha256": "9e03d680e3a4a4555d673bcb8cb466e479f5cb069a5fc8a0b0f99c089c50fd63"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link5.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link5.dae",
+    "source_sha256": "0be76681192578a14d6ace89527e4ee418f7395e825e285125e05fd998d24e3e"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link6.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link6.dae",
+    "source_sha256": "ed9c57432b079d55b9954775f2ddfe34e8b904f683949b8eb6314238f8afa46e"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/franka/visual/link7.dae",
+    "destination": "asset/franka_gx4m/meshes/franka/visual/link7.dae",
+    "source_sha256": "71be614f734bd27b2d7dec3e8bb022251cbbfce38b0a12dbfc1b88bc0513822a"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/base_link.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/base_link.STL",
+    "source_sha256": "c938de77270f49adf1e63af4d5fee3956ef625d80324264ad924c895ca75e449"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link1.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link1.STL",
+    "source_sha256": "f5e912352f31c8027256b316f3401b35d387900f46a3c357996566d243da76ac"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link10.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link10.STL",
+    "source_sha256": "07fbff4283e83ca276d095256f2ef4dd1f059d854f021c87c65c6f1273108bb5"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link11.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link11.STL",
+    "source_sha256": "23a0a1f071c44a4c2af58404f7652dc354950c3ec73d7e8851b41a8c6bd5b81a"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link12.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link12.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link13.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link13.STL",
+    "source_sha256": "bdf88ecd56d8a0f98c69e8a5e4e89fe5ad581c4717afa3537d38b9a098aad281"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link14.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link14.STL",
+    "source_sha256": "e8ae2e68b174b4fa5c7d95671473d38d4120d5358c7278111bdb359acb888366"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link15.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link15.STL",
+    "source_sha256": "f09b652c52831e26e73e6f717dc9d7a8ea6f994dbab3eaf25d63699c5ad48a9f"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link16.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link16.STL",
+    "source_sha256": "8c43ca40726de945110268de8fa55efff7ba3a85cc3bd743ef12d2e8b62ccc95"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link17.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link17.STL",
+    "source_sha256": "894f1001a000039d4d843b8dcae038febfe2f6972514cfcd8c1725ac224ae21c"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link2.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link2.STL",
+    "source_sha256": "daa40e681f79e46612bdbda4ac120a9575f38070002b151fc979e1c0f0d30e78"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link3.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link3.STL",
+    "source_sha256": "271cb144a07de276bf8038a248c71969c50c889420af10dd128131c53f94a3c9"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link4.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link4.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link5.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link5.STL",
+    "source_sha256": "17c35853e7d6eac9f4f756b50cc4df8b3ff36fc83dafe56de961bcf3b79ada08"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link6.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link6.STL",
+    "source_sha256": "13eda232f633d94f65ff6cd1bce133f2ed9e7b6b4c8ec6cbce428519ebcd0088"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link7.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link7.STL",
+    "source_sha256": "f0961df105e6a8f0fb5aaa4d2a455bc076b4648e78fdf0fcfbbed1e4c9f23d45"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link8.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link8.STL",
+    "source_sha256": "2643cbfa98589a80cdbd4f5c11b884edfe3ea97b4c450ba9b2a5e9ddd2298560"
+  },
+  {
+    "source": "asset/franka_gx4m/meshes/gx4m/link9.STL",
+    "destination": "asset/franka_gx4m/meshes/gx4m/link9.STL",
+    "source_sha256": "aef73caf57e4505c31872a171abb0014c5a5acd20684eaf729d9d397513ff61e"
+  },
+  {
+    "source": "asset/franka_gx4m/usd/franka_gx4m.usd",
+    "destination": "asset/franka_gx4m/usd/franka_gx4m.usd",
+    "source_sha256": "e001070bc7f6a6bbf585461b215b370afd3d35742be0c7f3cda556195cca7a23"
+  },
+  {
+    "source": "asset/franka_gx4m/usd/configuration/franka_gx4m_base.usd",
+    "destination": "asset/franka_gx4m/usd/configuration/franka_gx4m_base.usd",
+    "source_sha256": "447265e0bf183894a7948a36a2ba03f58059f5b1f7d5acc3e686c84009fcc6f3"
+  },
+  {
+    "source": "asset/franka_gx4m/usd/configuration/franka_gx4m_physics.usd",
+    "destination": "asset/franka_gx4m/usd/configuration/franka_gx4m_physics.usd",
+    "source_sha256": "077218eb9bf42c8ea785876e01ab73f24c31e402dd1a9ef68375957f265884eb"
+  },
+  {
+    "source": "asset/franka_gx4m/usd/configuration/franka_gx4m_robot.usd",
+    "destination": "asset/franka_gx4m/usd/configuration/franka_gx4m_robot.usd",
+    "source_sha256": "3fa7034a3c90923e41368e5f65a913f88db541404cee5e1c66462b77f210f1f3"
+  },
+  {
+    "source": "asset/franka_gx4m/usd/configuration/franka_gx4m_sensor.usd",
+    "destination": "asset/franka_gx4m/usd/configuration/franka_gx4m_sensor.usd",
+    "source_sha256": "282215d3885cacf7205ee21aa608dd59ca024c632dfb68a0a6ffa217425fe3ea"
+  },
+  {
+    "source": "asset/nucleus_dexcube/dex_cube_instanceable.usd",
+    "destination": "asset/nucleus_dexcube/dex_cube_instanceable.usd",
+    "source_sha256": "7a5c015690652f4ca1d62ed757d494c51f052067bd037372c8fd581bc92d437b"
+  },
+  {
+    "source": "asset/nucleus_dexcube/Materials/dex_cube_mod.png",
+    "destination": "asset/nucleus_dexcube/Materials/dex_cube_mod.png",
+    "source_sha256": "369aed3259b4b8fae55f84afdb575dd660b176b7f4bcdce8d9fe3672872aa29a"
+  },
+  {
+    "source": "asset/nucleus_dexcube/Props/instanceable_meshes.usd",
+    "destination": "asset/nucleus_dexcube/Props/instanceable_meshes.usd",
+    "source_sha256": "9c35330619c5b911c222b15f5eb22fc04046504262c96c9488c86d1af951db60"
+  },
+  {
+    "source": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/urdf/bulb_0017_modified.urdf",
+    "destination": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/urdf/bulb_0017_modified.urdf",
+    "source_sha256": "524129e00798571fb0470d29195b19ced8dff8b5f57738ffbb4eb18a952fd97c"
+  },
+  {
+    "source": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/base_link.STL",
+    "destination": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/base_link.STL",
+    "source_sha256": "c0e559f078102698c290fb48ae648de5c7784276e173dbf0c6c834e0a038b54d"
+  },
+  {
+    "source": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/link1.STL",
+    "destination": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/link1.STL",
+    "source_sha256": "b646b0e4cdb35891daee11c632d931686c5ed3c851fcbf9319c8051d0d95b466"
+  },
+  {
+    "source": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/link1_poisson_1024_feature.npy",
+    "destination": "asset/twist_dataset/twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/link1_poisson_1024_feature.npy",
+    "source_sha256": "ba99c2f0a991d9b16bfc72f091e6e8975e483f6bfa5ab0c8ce50300b83b784fa"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inhand_velocity/command_utils.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/rotation_metrics.py",
+    "operation": "Extract direction_net_rotation_deviations and integrate_world_angular_velocity only",
+    "source_sha256": "daefa6f575616fc22c508df2857ea69ae78992964634553a601a3779d12fb18a"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/config/twist_anything/bulb_custom.json",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/config/twist_anything/bulb_custom.json",
+    "operation": "Keep bulb_custom_0017 and explicit original class index 93",
+    "source_sha256": "7ba9a2d56f1455c9406a2aef005c569f636ffe22bc28d27cc8b0aa53be506f07"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/config/twist_anything/split/twist_cls_list.txt",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/config/twist_anything/split/twist_cls_list.txt",
+    "operation": "Replace with selected bulb only",
+    "source_sha256": "a5f5fadeecd48bcd83693e592ac3500038c6de62f9120344dbd85585aabdb16e"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/dexanytwist/config/twist_anything/split/twist_train_list.txt",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/dexanytwist/config/twist_anything/split/twist_train_list.txt",
+    "operation": "Replace with selected bulb only",
+    "source_sha256": "d46eea85e77269482749593361cf0ec8faffbebacee188a072d525612e7ce3d5"
+  },
+  {
+    "source": "asset/nucleus_dexcube/DOWNLOAD_SOURCE.txt",
+    "destination": "asset/nucleus_dexcube/DOWNLOAD_SOURCE.txt",
+    "source_sha256": "f4bb8353ea79b5a1b1d023a8ab96c8800337639b1ce0b4d9cc3d7cf203f00beb"
+  },
+  {
+    "source": "scripts/training_time_limit.py",
+    "destination": "scripts/training_time_limit.py",
+    "source_sha256": "b35c1f6b348b7512df7365534f4fd4b7ade575b194a8a1cc65d1349f534bed08"
+  },
+  {
+    "source": "tests/test_training_time_limit.py",
+    "destination": "tests/test_training_time_limit.py",
+    "source_sha256": "19a5b44513f141060d081ff8babd6a364c64f1e4736013b8f9651423040f58a4"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/base_pose.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/base_pose.py",
+    "source_sha256": "60ea38cc3a2f11fcda55f7640acfa6461fbbc0e062f72ea47434b466cb0382bc"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/grasp_data.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/grasp_data.py",
+    "source_sha256": "fb99ef9a3ec6ec821896eb75cc6976d6fd37f733bcd644d516cbdc6e0ed32a9f"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/mixed_cache.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/mixed_cache.py",
+    "source_sha256": "ac28c23082678d4ff76d605ae7038782f9d857ea9457ba4d46943371875b68f6"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/object_assets.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/object_assets.py",
+    "source_sha256": "30097753bc5dd44932e1a8921de429585a43b569dcc912f8fe8a3d52c8cf5748"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/object_observations.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/object_observations.py",
+    "source_sha256": "edbd080ccc04fad315183143632bd0999673df14ecc767a1bd0222fae01585d6"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/object_visuals.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/object_visuals.py",
+    "source_sha256": "9689191744afc5f2e590272282cbea897f7ba597e6d9c57fcea12a41bcb0c9f5"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/orientation_axes.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/orientation_axes.py",
+    "source_sha256": "e810f8896cc6b87614404870c42d18f7849f12a97affd30df7f6ebd0c5873de9"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/reward_terms.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/reward_terms.py",
+    "source_sha256": "dadbafee4a094a9699242f7c300033f9be51aeba684624e7050146d4569fd2d0"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inhand_velocity/super_inhand_velocity_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/rotation_base.py",
+    "source_sha256": "77cfa418dac5f615d44614c94b84a1393c32ab00f5496d277987dbceda7ed483"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/rotation_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/rotation_env.py",
+    "source_sha256": "3e0b0f93612a3b36646a3e53308630e1deba8f9131816344e655f2a13a017bef"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/super_inair_env.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/super_inair_env.py",
+    "source_sha256": "6e15f6b19258b3105809878fe13f8f7cf8e34714f5f6b898065e3b91f9653702"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inair/__init__.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/__init__.py",
+    "source_sha256": "09f88f03cfd46dcef9f711ddd42460f0a43258dea385feeb2168de52716fec02"
+  },
+  {
+    "source": "source/gx4m_learning/gx4m_learning/tasks/direct/super_inhand_velocity/agents/rsl_rl_ppo_cfg.py",
+    "destination": "source/gex_learning/gex_learning/tasks/direct/super_inair/agents/rsl_rl_ppo_cfg.py",
+    "source_sha256": "c19b3af6bb9a649706a4c00abfc9b9ad816c0f0fbd1cc40827c7b63ef199710e"
+  },
+  {
+    "source": "scripts/super_inair_grasps.py",
+    "destination": "scripts/super_inair_grasps.py",
+    "source_sha256": "b0b4790fd964621158e1a20f9d0a0f22f31041efdf9f10abc9145252e92ad01b"
+  },
+  {
+    "source": "tests/test_super_inair.py",
+    "destination": "tests/test_super_inair.py",
+    "source_sha256": "5d12bddb366556f1c9b4730ed71d36dc1e1742ed6f80200dbbd0faebc78ce0f3"
+  },
+  {
+    "source": "tests/test_super_inair_contact_timeout.py",
+    "destination": "tests/test_super_inair_contact_timeout.py",
+    "source_sha256": "edb7469356b556679a0b4cbd27fae40d03d8b32ee8f07752c6b2d5e4d9ab0fea"
+  },
+  {
+    "source": "tests/test_super_inair_cross_axis.py",
+    "destination": "tests/test_super_inair_cross_axis.py",
+    "source_sha256": "2c06e3401b6cbc40880c52138b25562a547e0940230f4de374e13b71569513f5"
+  },
+  {
+    "source": "experiment/super_inair/objects/tennis_ball_60.json",
+    "destination": "experiment/super_inair/objects/tennis_ball_60.json",
+    "source_sha256": "95ee7e7ae437aa700e229f2a5b553433ded05aadf11c5ff74078e88079a2c036"
+  },
+  {
+    "source": "asset/HORA/LICENSE",
+    "destination": "asset/HORA/LICENSE",
+    "source_sha256": "a3712180ead764eaa0c5f6d55d7cfebf56320d81107219dd238d4854c3c79a99"
+  },
+  {
+    "source": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured.obj",
+    "destination": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured.obj",
+    "source_sha256": "99a646824d8a98f14d163207fe3a2dd2d6a0818b3b295e7339a461f72245bb52",
+    "runtime_only": true
+  },
+  {
+    "source": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured.obj.mtl",
+    "destination": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured.obj.mtl",
+    "source_sha256": "afde660d59a0762fa7169675dbe06a5eb6595da4b48d41bf86a102ce80355797",
+    "runtime_only": true
+  },
+  {
+    "source": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured_vhacd.obj",
+    "destination": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/textured_vhacd.obj",
+    "source_sha256": "bdcd451cd4f456c9bbdbb6c60edcc47c66e23d822929dcece7cb655127c2a2b4",
+    "runtime_only": true
+  },
+  {
+    "source": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/texture_map.png",
+    "destination": "asset/HORA/assets/ycb/056_tennis_ball/google_16k/texture_map.png",
+    "source_sha256": "7e2aef766a39b64dab16fe84e9a4a6779008727946d2a6127c6270eea10fde60",
+    "runtime_only": true
+  },
+  {
+    "source": "asset/HORA/selected/selection.json",
+    "destination": "asset/HORA/selected/selection.json",
+    "source_sha256": "7ce594b5de52becd0ce5dd4bf88685c5cb7f84bc86ca787da0e9c2ed6ab1f09d"
+  },
+  {
+    "source": "asset/HORA/selected/tennis_ball_60.urdf",
+    "destination": "asset/HORA/selected/tennis_ball_60.urdf",
+    "source_sha256": "35146859414dd0830c2c9e53e9879a8edd8232382a1982527658ad24d4f41c18"
+  }
+]

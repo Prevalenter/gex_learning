@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools<82.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gex-learning"
+version = "0.1.0"
+description = "Isaac Lab learning tasks for GX4M dexterous hand tasks."
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+dependencies = ["numpy", "yourdfpy>=0.0.58", "h5py", "tensordict", "PyYAML"]
+
+[project.optional-dependencies]
+viser = [
+    "viser>=1.0.30",
+    "yourdfpy>=0.0.58",
+]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["source/gex_learning"]
+
+[tool.setuptools.package-data]
+"gex_learning.tasks.direct.inhand_reorient" = ["config/*.json"]
+"gex_learning.tasks.direct.dexanytwist" = ["config/twist_anything/*.json", "config/twist_anything/split/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "scripts", "source/gex_learning"]

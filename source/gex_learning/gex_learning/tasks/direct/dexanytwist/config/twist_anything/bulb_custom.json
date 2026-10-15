@@ -1,0 +1,67 @@
+{
+  "bulb_custom_0017": {
+    "urdf_path": "twist_dataset/twist_dataset_urdf/bulb/bulb_0017/urdf/bulb_0017_modified.urdf",
+    "dx": 0.02,
+    "dy": -0.109954,
+    "dz": -0.06,
+    "kp_bais": [
+      [
+        0.0251383,
+        0.0375,
+        -0.00274374
+      ],
+      [
+        0.0295852,
+        -0.0225,
+        0.00274903
+      ],
+      [
+        -0.0148617,
+        -0.0225,
+        0.00272634
+      ],
+      [
+        -0.0398617,
+        0.0075,
+        -0.00273163
+      ]
+    ],
+    "kp_center": [
+      [
+        -0.00513828,
+        -0.0075,
+        0.0441697
+      ]
+    ],
+    "points_feature": "twist_dataset/twist_dataset_urdf/bulb/bulb_0017/meshes/link1_poisson_1024_feature.npy",
+    "hand_pose_offset": [
+      0.0,
+      -0.015862,
+      0.0340162
+    ],
+    "hand_rot_euler_deg": [
+      24.9768,
+      0.0,
+      0.0
+    ],
+    "action_mean_joint_pos": [
+      0.351,
+      1.518,
+      0.431,
+      0.655,
+      0.0,
+      0.463,
+      0.431,
+      0.399,
+      -0.036,
+      0.639,
+      0.399,
+      0.0,
+      0.0,
+      0.0,
+      1.007,
+      0.399
+    ],
+    "class_index": 93
+  }
+}

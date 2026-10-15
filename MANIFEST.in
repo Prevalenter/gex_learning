@@ -1,0 +1,13 @@
+include README.md LICENSE .gitignore
+recursive-include scripts *.py
+recursive-include experiment *.ps1
+recursive-include docs *.md *.json
+include asset/README.md asset/manifest.json
+recursive-include asset/gx4m *.urdf *.STL *.stl
+recursive-include asset/franka_gx4m *.urdf *.usd *.STL *.stl *.dae
+recursive-include asset/nucleus_dexcube *.usd *.png *.txt
+recursive-include asset/twist_dataset *.urdf *.STL *.npy
+recursive-include tests *.py
+
+recursive-include experiment/super_inair *.json
+include asset/HORA/LICENSE asset/HORA/selected/selection.json asset/HORA/selected/tennis_ball_60.urdf

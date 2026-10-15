@@ -1,0 +1,3 @@
+dex_cube_instanceable.usd <- https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/DexCube/dex_cube_instanceable.usd bytes=4107
+Props/instanceable_meshes.usd <- https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/DexCube/Props/instanceable_meshes.usd bytes=6524
+Materials/dex_cube_mod.png <- https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/DexCube/Materials/dex_cube_mod.png bytes=34189

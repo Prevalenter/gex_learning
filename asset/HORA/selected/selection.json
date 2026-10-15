@@ -1,0 +1,28 @@
+{
+  "reference_sphere_diameter_m": 0.06,
+  "mass_kg": 0.05,
+  "physical_grasp_validation": "not yet performed",
+  "objects": [
+    {
+      "path": "selected/tennis_ball_60.urdf",
+      "geometry": "mesh",
+      "collision_dimensions_m": [
+        0.06000000000001326,
+        0.05999467156094988,
+        0.059032888310009794
+      ],
+      "mass_kg": 0.05,
+      "id": "tennis_ball_60",
+      "source": "assets/ycb/056_tennis_ball.urdf",
+      "uniform_scale_baked_into_urdf": 0.744094313371422,
+      "simulator_scale": [
+        1,
+        1,
+        1
+      ],
+      "inertia_method": "thin spherical shell approximation, radius = max collision AABB / 2",
+      "reason": "Textured near-sphere; maximum collision AABB dimension 60 mm",
+      "grasp_validated": false
+    }
+  ]
+}
